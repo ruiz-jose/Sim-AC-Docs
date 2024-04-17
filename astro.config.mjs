@@ -6,9 +6,6 @@ import LangAC from "./src/assets/ac.tmLanguage.json";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://ruiz-jose.github.io/Sim-AC-Docs/",
-	base: "/Sim-AC-Docs",
-	trailingSlash: "always",
-	
 	integrations: [
 		starlight({
 			title: 'Sim-AC',
@@ -22,10 +19,6 @@ export default defineConfig({
 			lastUpdated: true,
 			social: {
 				github: 'https://github.com/ruiz-jose/Sim-AC-Docs',
-			},
-			defaultLocale: "root",
-			locales: {
-				root: { lang: "es", label: "Español" }
 			},
 			sidebar: [
 				{ label: "Introducción", link: '/inicio/intro/', badge: 'inicio' },				

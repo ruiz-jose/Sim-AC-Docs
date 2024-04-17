@@ -6,6 +6,7 @@ import LangAC from "./src/assets/ac.tmLanguage.json";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://ruiz-jose.github.io/Sim-AC-Docs/",
+	base: "/Sim-AC-Docs/",
 	trailingSlash: "always",
 	
 	integrations: [

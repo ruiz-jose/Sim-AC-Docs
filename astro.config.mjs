@@ -23,6 +23,11 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/ruiz-jose/Sim-AC-Docs',
 			},
+			defaultLocale: "root",
+			locales: {
+				root: { lang: "es", label: "Español" },
+				// en: { label: "English" },
+			},
 			sidebar: [
 				{ label: "Introducción", link: '/inicio/intro/', badge: 'inicio' },				
 				{

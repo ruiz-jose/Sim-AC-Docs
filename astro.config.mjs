@@ -1,14 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-//import vonsimLang from "./src/assets/vonsim.tmLanguage.json";
 import LangAC from "./src/assets/ac.tmLanguage.json";
-//import vonsimLang from "./src/assets/ac.tmLanguage1.json";
-//import vonsimLang from "./src/assets/sim-ac.tmGrammar.json";
-
-
-import { fileURLToPath } from "node:url";
-import fs from 'node:fs'
 
 // https://astro.build/config
 export default defineConfig({

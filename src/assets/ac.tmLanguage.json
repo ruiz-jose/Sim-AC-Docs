@@ -1,0 +1,28 @@
+{
+  "id": "ac",
+  "name": "Sim-AC",
+  "scopeName": "source.ac",
+  "fileTypes": ["ac"],
+  "patterns": [
+    { "name": "comment.line.ac", "match": ";.*" },
+    { "name": "support.function.ac", "match": "\\b(?i:SECTION .DATA|SECTION .TEXT)\\b"},
+    {
+      "name": "storage.type.struct.ac",
+      "match": "(?i)\\b(add|sub|lda|sta|jmp|jn?[cz]|hlt|ldi)\\b"
+    },
+    { "name": "storage.type.ac", "match": "(?i)\\b(db)\\b" },
+    {
+      "name": "constant.numeric.integer.hexadecimal.ac",
+      "match": "(?i)\\b(\\d+[\\da-f]*h)\\b"
+    },
+    {
+      "name": "entity.name.function.ac",
+      "match": "([a-z]|[A-Z])+[:|>]*"
+    },
+    { "name": "constant.numeric.integer.binary.ac", "match": "(?i)\\b([01]+b)\\b" },
+    { "name": "constant.numeric.integer.decimal.ac", "match": "\\b(\\d+)\\b" },
+    { "name": "punctuation.ac", "match": "([\\(\\),\\[\\]])" },
+    { "name": "string.quoted.single.ac", "match": "('[^']')" },
+    { "name": "string.quoted.double.ac", "match": "(\"[^\"]*\")" }
+  ]
+}

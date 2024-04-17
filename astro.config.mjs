@@ -25,8 +25,7 @@ export default defineConfig({
 			},
 			defaultLocale: "root",
 			locales: {
-				root: { lang: "es", label: "Español" },
-				// en: { label: "English" },
+				root: { lang: "es", label: "Español" }
 			},
 			sidebar: [
 				{ label: "Introducción", link: '/inicio/intro/', badge: 'inicio' },				

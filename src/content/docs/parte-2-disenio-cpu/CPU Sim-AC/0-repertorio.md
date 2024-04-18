@@ -29,16 +29,6 @@ El rango de las direcciones es de 32 posiciones.
 :::
 
 
-## Banderas (Flags)
-La ALU incluye indicadores o banderas (flags) es un registro de un bit que toma valor 0 o 1 dependiendo del resultado de la última operación aritmética. Los más significativos son:
--	Z (**Zero**): toma valor 1 cuando la última operación aritmetica tuvo resultado cero. 
-JZ: Salta si el flag Z = 1, entonces PC =  Mem[Dirección]
-
--	C(**Carry**) : toma valor 1 cuando  cuando el resultado de la operación cae fuera del rango {0...255}, se puede dar: 
-    -  En la operación suma cuando el resultado supera 255 
-    -  En la operación resta cuando el resultado es menor que 0, este último indica que el valor del acumulodor es menor que el dato de memoria (AC < Mem[Dirección])
-
-
 ## Tipos instrucciones
 Las instrucciones se clasifican en tres tipos
 

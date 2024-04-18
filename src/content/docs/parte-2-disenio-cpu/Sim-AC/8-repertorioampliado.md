@@ -7,8 +7,7 @@ Es posible liberar el código de operación OpCode = **111** de la instrucción 
 De esta manera, se libera el código de operación OpCode = **111** pero la  instrucción **HLT** sigue existiendo cómo una seudo instrucción representada por el código de operación OpCode = **100** y la particularidad del operando **JMP DirecciónJMP**.  
 
 ## Repertorio de instrucciones
-El repertorio de instrucciones se compone de las 8 instrucciones, identificadas por el Código de Operación (OpCode).
-La primera columna código de operación (OpCode) en decimal y la segunda en binario, que es el que maneja la máquina. En la tercera columna se muestra el código nemónico asociado. Este código es el utilizado para representar a las instrucciones en el lenguaje ensamblador, la ultima columna es la acción que lleva a cabo esa instrucción.
+El nuevo repertorio de instrucciones del CPU quedaría:
 
 | # | OpCode | Nemonico             | Acción
 | - |--------|----------------------|------------
@@ -21,8 +20,8 @@ La primera columna código de operación (OpCode) en decimal y la segunda en bin
 | 6 | 110    | **JC**  Dirección    | Saltar a la dirección de memoria, Si C= 1
 | 7 | 111    | **LDI**   Valor      | Carga valor en el registro AC
 
-:::caution[Limite]
-Para detener el programa se utiliza la instruccion JMP xxx, donde el destino del salto es la dirección donde se encuentra la isntrucción JMP.
+:::caution[Detener programa HLT]
+Para detener el programa se utiliza la instrucción JMP xxx, donde el destino del salto es la dirección donde se encuentra la instrucción JMP.
 De está manera el procesador entra en un ciclo infinito ejecutando siempre la misma instrucción JMP xxx.
 :::
 

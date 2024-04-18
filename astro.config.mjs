@@ -32,7 +32,7 @@ export default defineConfig({
 					autogenerate: { directory: 'parte-1-circuitos' },
 				},
 				{
-					label: 'Parte 2: Diseño CPU',
+					label: 'Parte 2: Diseño CPU 🛠️',
 					items: [
 						{ label: "Componentes de la computadora", link: "/parte-2-disenio-cpu/0-computadora" },
 						{

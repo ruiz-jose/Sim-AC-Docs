@@ -33,7 +33,14 @@ export default defineConfig({
 				},
 				{
 					label: 'Parte 2: Diseño CPU',
-					autogenerate: { directory: 'parte-2-disenio-cpu' },
+					items: [
+						{ label: "Componentes de la computadora", link: "/parte-2-disenio-cpu/0-computadora" },
+						{
+						label: "CPU Sim-AC",
+						collapsed: true,
+						autogenerate: { directory: "parte-2-disenio-cpu/sim-ac" },
+						},
+					],
 				},
 				{
 					label: 'Parte 3: Ensamblador',

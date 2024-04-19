@@ -38,7 +38,7 @@ export default defineConfig({
 						{
 						label: "CPU Sim-AC",
 						collapsed: true,
-						autogenerate: { directory: "parte-2-disenio-cpu/sim-ac" },
+						autogenerate: { directory: "parte-2-disenio-cpu/Sim-AC" },
 						},
 					],
 				},

@@ -5,7 +5,8 @@ import LangAC from "./src/assets/ac.tmLanguage.json";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://github.com/ruiz-jose/sim-ac",
+	site: "https://ruiz-jose.github.io/Sim-AC-Docs/",
+	base: '/Sim-AC-Docs/',
 	integrations: [
 		starlight({
 			title: 'Sim-AC',
@@ -18,7 +19,7 @@ export default defineConfig({
 			pagination: false,
 			lastUpdated: true,
 			social: {
-				github: 'https://github.com/ruiz-jose/sim-ac',
+				github: 'https://github.com/ruiz-jose/Sim-AC-Docs',
 			},
 			sidebar: [
 				{ label: "Introducción", link: '/inicio/intro/', badge: 'inicio' },				
@@ -31,8 +32,15 @@ export default defineConfig({
 					autogenerate: { directory: 'parte-1-circuitos' },
 				},
 				{
-					label: 'Parte 2: Diseño CPU',
-					autogenerate: { directory: 'parte-2-disenio-cpu' },
+					label: 'Parte 2: Diseño CPU 🛠️',
+					items: [
+						{ label: "Componentes de la computadora", link: "/parte-2-disenio-cpu/0-computadora" },
+						{
+						label: "CPU Sim-AC",
+						collapsed: true,
+						autogenerate: { directory: "parte-2-disenio-cpu/Sim-AC" },
+						},
+					],
 				},
 				{
 					label: 'Parte 3: Ensamblador',

@@ -103,7 +103,7 @@
      inkscape:cx="102.83688"
      inkscape:cy="129.96454"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="svg2"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -125,6 +125,20 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <rect
+     width="228.11703"
+     height="188.3156"
+     rx="27.183681"
+     fill="#0C0A09"
+     id="rect1-8"
+     inkscape:label="rect1"
+     style="opacity:1;mix-blend-mode:darken;fill:#d5f3ff;fill-opacity:1;stroke-width:0.809622"
+     x="12.71632"
+     y="15.663119" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="fondo" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -272,16 +286,6 @@
        y="87.21254"
        rx="54.197914"
        inkscape:label="rect1" />
-    <rect
-       width="228.11703"
-       height="188.3156"
-       rx="45.623398"
-       fill="#0C0A09"
-       id="rect1-8"
-       inkscape:label="rect1"
-       style="opacity:1;mix-blend-mode:darken;fill:#d5f3ff;fill-opacity:1;stroke-width:0.809622"
-       x="12.71632"
-       y="15.663119" />
     <path
        fill="#ffed00"
        d="m 109.52766,53.843971 h 70.84203 c 5.06911,0 9.17761,4.359905 9.17761,9.735294 v 19.470591 c 0,5.3793 -4.1085,9.73921 -9.17761,9.73921 h -70.84203 c -5.06543,0 -9.17393,-4.35991 -9.17393,-9.73921 V 63.579265 c 0,-5.375389 4.1085,-9.735294 9.17393,-9.735294 z m 0,0"

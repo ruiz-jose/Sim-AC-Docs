@@ -19,14 +19,13 @@ El objetivo de utilizar el simulador Sim-AC en la asignatura Arquitectura de Com
 ### Filosofía ✨
 Al crear este simulador, se establecrieron los siguientes principios rectores:
 
-
-1. La arquitectura de **AC**umulador se caracteriza por su diseño sencillo de una unidad central de procesamiento (CPU) y facil de entender.
-2. Reseña básica de la lógica binaria y circuitos necesaria para comprender la arquitectura de **AC**umulador.
-3. Diseñar el CPU de la arquitectura **AC**umulador utilizando herramientas de diseño y simulación de circuitos lógicos (Logisim o Circuitverse).
-4. Presentar el lenguaje y el ensamblador, repertorio de instrucciones, formato y modo de direccionamiento.
-5. Ensamblador en python (asm-AC.py) que se encarga de generar el binario para el CPU circuito creado con la herramientas de diseño y simulacion de circuitos lógicos.
-6. Utilización de una herramienta de simulación para visualizar los pasos del ciclo de una instrucción (Sim-AC).
-7. Sintetizar la arquitectura de **AC**umulador para que pueda funcionar en la EDU-CIAA-FPGA.
+1. La arquitectura de **AC**umulador se caracteriza por un diseño sencillo y facil de entender.
+2. Se presenta una reseña básica de la lógica binaria y circuitos necesarios para comprender la arquitectura de **AC**umulador.
+3. Diseñar de la Unidad Central de Procesamiento (CPU) de la arquitectura **AC**umulador utilizando herramientas de diseño y simulación de circuitos lógicos (Logisim/Circuitverse).
+4. Presentar el lenguaje y el ensamblador aplicado al repertorio de instrucciones de la arquitectura **AC**umulador, formato de instrucciones y modos de direccionamiento.
+5. Herramienta ensamblador en python (asm-AC.py) encargada de generar el código maquina para simular la ejecución de programas en circuitos lógicos a traves de la heramientas Logisim/Circuitverse.
+6. Utilización de una herramienta de simulación web para visualizar los pasos del ciclo de una instrucción (Sim-AC).
+7. Sintetizar la arquitectura de **AC**umulador para que pueda funcionar en la EDU-CIAA-FPGA y simular su ejecución.
 
 
 ### Licencia 📑

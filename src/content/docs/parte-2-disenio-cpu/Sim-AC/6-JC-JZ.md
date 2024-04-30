@@ -8,11 +8,16 @@ La ALU implementa dos indicadores indicadores o banderas (flags):
 
 -	Z (**Zero**): toma valor 1 cuando el resultado de la ALU tiene valor cero. 
 
-    JZ: Salta si el flag Z = 1, entonces PC =  Mem[Dirección]
+    JZ: salta si el resultado de la última operación realizada por la ALU ha sido cero. En caso contrario sigue con la secuencia normal, y la instrucción no hace nada.
+    Salta si el flag Z = 1, entonces PC =  Mem[Dirección]
 
--	C(**Carry**) : toma valor 1 cuando cuando el resultado de la ALU cae fuera del rango {0...255}, es decir, se puede dar: 
+-	C(**Carry**): toma valor 1 cuando el resultado de la ALU cae fuera del rango {0...255}.
+
+    JC: salta si el resultado de la última operación realizada por la ALU es: 
     -  En la operación suma cuando el resultado supera 255 
     -  En la operación resta cuando el resultado es menor que 0, este último indica que el valor del registro acumulador es menor que el dato de memoria (AC < Mem[Dirección])
+
+    En caso contrario sigue con la secuencia normal, y la instrucción no hace nada.
 
 Estos dos indicadores o flags se almacenan en registros de un bit, llamados Z y C, y solo se actualizan ante una operación artimética (ADD o SUB),pudiendo tomar 0 o 1 dependiendo del resultado de la última operación aritmética (ADD o SUB).
 

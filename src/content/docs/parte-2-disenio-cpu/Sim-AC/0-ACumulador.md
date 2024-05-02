@@ -3,7 +3,7 @@ title: Arquitectura ACumulador
 description: comprender el funcionamiento de la computadora a traves de la arquitectura acumulador.
 ---
 
-El diseño del CPU Sim-AC es intuitiva y fácil, los dividiremos en partes que representan las decisiones arquitectónicas que se tomaron para su contrucción:
+La arquitectura basada en el ACumulador se caracteriza por su diseño intuitivo y fácil de entender:
 
 ![cpu-sim-ac](../../../../assets/cpu-sim-ac.svg)  
 
@@ -12,9 +12,14 @@ Este simulador busca ser una herramienta para la enseñanza de la arquitectura d
 :::
 
 ## ALU:
-  La operaciones de la ALU siempre tiene como destino el registro AC y realiza operaciones con datos de de 1 byte (8 bits)
+En las operaciones de la ALU esta prestablecido que uno de los operandos fuentes es el registro AC y su resultado siempre se almacena en el registro AC:
 
 ![ALU-AC2](../../../../assets/ALU-AC.svg)  
+
+:::note[Tipo de datos]
+Las operaciones en la ALU siempre son con datos de 1 byte (8 bits)
+:::
+
   
 ## Registros:
   - Registro acumulador (AC) de 8 bits (1 byte);

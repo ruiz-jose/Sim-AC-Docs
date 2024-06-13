@@ -1,5 +1,5 @@
 ---
-title: 8. Repertorio ampliado
+title: 8. Carga inmediata (LDI)
 description: Descripción repertorio de instrucciones arquitectura del CPU sim-ac
 ---
 

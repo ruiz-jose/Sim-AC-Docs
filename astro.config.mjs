@@ -36,10 +36,15 @@ export default defineConfig({
 					items: [
 						{ label: "Componentes de la computadora", link: "/parte-2-disenio-cpu/0-computadora" },
 						{
-						label: "CPU Sim-AC",
+						label: "CPU Sim-AC-Harvad",
 						collapsed: true,
-						autogenerate: { directory: "parte-2-disenio-cpu/Sim-AC" },
+						autogenerate: { directory: "parte-2-disenio-cpu/Sim-AC-Harvard" },
 						},
+						{
+							label: "CPU Sim-AC-Neumann",
+							collapsed: true,
+							autogenerate: { directory: "parte-2-disenio-cpu/Sim-AC-Neumann" },
+						}
 					],
 				},
 				{

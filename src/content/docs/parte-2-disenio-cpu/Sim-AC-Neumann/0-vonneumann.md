@@ -3,17 +3,22 @@ title: Von Neumann
 description: Descripción de la arquitectura del CPU sim-ac Von Neumann
 ---
 
+## Idea
+Hasta mediados de los años cuarenta, los computadores se programaban mediante la manipulación de un panel frontal, donde los usuarios conectaban o desconectaban switches (conmutadores) para que el computador realizara diferentes funciones y completara la tarea deseada. A finales de 1945, Von Neumann publicó un artículo que marcó un paso decisivo hacia la automatización del procesamiento digital de la información, introduciendo dos conceptos innovadores:
 
-Hasta mediados de los años cuarenta los computadores se programaban por medio de la manipulación de un panel frontal, en el cual los usuarios conectaban o desconectaban determinados switches (conmutadores), para que el computador realizase una u otra función y así llevar a cabo la tarea deseada. Hacia fines del 1945 Von Neumann publica un articulo que promueve el paso decisivo hacia la mecanización del tratamiento digital de la información, con la invención de dos nuevos conceptos:
+- **El programa almacenado**: el computador tendría un conjunto de instrucciones almacenado en su propia memoria. En lugar de ejecutar las operaciones conforme a su lectura directa desde un medio externo (como una cinta perforada), la nueva máquina almacena el programa en la memoria antes de ejecutar las operaciones. La memoria se utiliza tanto para almacenar datos como instrucciones del programa. Esta idea, aparentemente sencilla, ha prevalecido en el diseño de los computadores hasta nuestros días.
 
-- **El programa almacenado**: el computador tendría un programa de instrucciones almacenado en su propia memoria. En lugar de ejecutar las operaciones al compás de su lectura (en una cinta perforada, por ejemplo) la nueva maquina supone almacenado en memoria el programa previamente a la ejecución de las operaciones. El uso de memoria es tanto para el almacenamiento de datos como de instrucciones de programa. Esta idea sencilla es la que ha imperado en el diseño de los computadores hasta nuestros días.
+- **La ruptura de Secuencia**: este concepto es fundamental para la capacidad de toma de decisiones de los programas. En lugar de requerir intervención humana cada vez que se presenta una decisión (ligada estrechamente a los resultados obtenidos), las operaciones de decisión lógica son automáticas, permitiendo a la máquina usar una instrucción llamada salto condicional o ruptura condicional de secuencia. Dependiendo del valor de un resultado previo, la máquina ejecutará una u otra parte del programa.
 
-- **La ruptura de Secuencia**: esta es la clave del poder decisorio de los programas. En lugar de necesitar intervención humana cada vez que se planteaba una toma de decisión (íntimamente ligada a los resultados que se iban obteniendo) las operaciones de decisión lógica serían automáticas dotando a la máquina de una instrucción llamada salto condicional o ruptura condicional de secuencia. Según el valor de un resultado ya obtenido, la maquina ejecutaría una u otra parte del
-programa.
+## Memoria Unificada de Datos e Instrucciones
+La arquitectura de Von Neumann se caracteriza también por la unificación de la memoria para datos e instrucciones. Esto significa que tanto los datos del programa como las instrucciones que el CPU debe ejecutar se almacenan en el mismo espacio de memoria.
 
+## Registro de Instrucciones
+Para gestionar eficientemente esta arquitectura, se implementa un registro de instrucciones, que almacena temporalmente la instrucción mientras se obtiene el operando necesario.
 
-
-(ver [Repertorio de instrucciones](../../../parte-2-disenio-cpu/sim-ac-harvard/8-ldi/))
-
+## Ciclo Fetch-Execute
+Para ejecutar una instrucción, el CPU sigue un ciclo básico de dos fases: fetch y execute. En la fase de fetch, el CPU recupera (fetches) la instrucción desde la memoria y la almacena temporalmente en el registro de instrucciones. En la fase de execute, el CPU procesa la instrucción recuperada, llevando a cabo la operación indicada, que puede implicar cálculos, movimiento de datos o alteración de la secuencia de ejecución del programa. Este ciclo de fetch-execute se repite continuamente mientras el computador esté en funcionamiento, permitiendo la ejecución secuencial y eficiente de las instrucciones del programa almacenado.
 
 <iframe src="https://circuitverse.org/simulator/embed/8-carga-inmediata-ldi-sim-ac-neumann?theme=default&display_title=false&clock_time=false&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
+
+(Mantiene el mismo [Repertorio de instrucciones](../../../parte-2-disenio-cpu/sim-ac-harvard/8-ldi/))

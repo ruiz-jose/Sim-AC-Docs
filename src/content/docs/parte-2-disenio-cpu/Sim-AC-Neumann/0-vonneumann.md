@@ -13,7 +13,7 @@ programa.
 
 
 
-(ver [Repertorio de instrucciones](../parte-2-disenio-cpu/sim-ac-harvard/8-ldi/))
+(ver [Repertorio de instrucciones](../../../parte-2-disenio-cpu/sim-ac-harvard/8-ldi/))
 
 
-<iframe src="https://circuitverse.org/simulator/embed/sim-ac-von-neumann-pc-1-en-fase1?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
+<iframe src="https://circuitverse.org/simulator/embed/8-carga-inmediata-ldi-sim-ac-neumann?theme=default&display_title=false&clock_time=false&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>

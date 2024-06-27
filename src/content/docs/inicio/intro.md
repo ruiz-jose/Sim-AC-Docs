@@ -4,6 +4,11 @@ description: comprender el funcionamiento de la computadora a traves de la arqui
 ---
 
 Sim-AC es una herramienta destinada para dar soporte en la enseñanza y aprendizaje de organización y arquitectura de computadoras. 
+La arquitectura de **AC**umulador se caracteriza por un diseño sencillo y fácil de entender, ideal para fines educativos y experimentales. A continuación, se incluyen diagramas detallados de la arquitectura AC.
+
+![cpu-sim-ac](../../../../assets/cpu-sim-ac.svg)  
+
+Este enfoque permite a los estudiantes y desarrolladores comprender rápidamente los principios subyacentes y cómo pueden aplicarse a la creación de programas eficientes.
 
 ### Motivación  🚀
 
